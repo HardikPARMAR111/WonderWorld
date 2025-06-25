@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState,useEffect } from "react";
 import Tiptaprender from "../components/Tiptaprender";
 import extractFirstImg from "../utils/extractImage";
+import Image from "next/image";
 
 export default function BlogPosts(){
     const [blogs,setblogs]=useState([]);
@@ -25,7 +26,7 @@ export default function BlogPosts(){
                             return(
                             <Link key={blog._id}
                             href={`Blog/${blog.slug}`} className="max-w-auto mx-auto bg-gray-900 rounded-xl shadow-md flex hover:bg-gray-800 transition">
-                                {imgurl?<img src={imgurl} alt="No Image" height="70" width="100" className="w-1/3 h-36 p-4"/>:null}
+                                {imgurl?<Image src={imgurl} alt="No Image" height="70" width="100" className="w-1/3 h-36 p-4"/>:null}
                                 <div className="w-2/3 p-4 flex flex-col">
                                     <h2 className="text-2xl font-semibold mb-2">{blog.title}</h2>
                                     <Tiptaprender html={blog.content.substring(0,60)+"..."}/>
