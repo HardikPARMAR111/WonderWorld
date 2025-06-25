@@ -16,7 +16,7 @@ export default function page() {
                     </p>
                 </section>
                 <section className='mb-10'>
-                    <h2 className='text-2xl font-semibold text-white mb-2'>What You'll Find here</h2>
+                    <h2 className="text-2xl font-semibold text-white mb-2">What You'll Find here</h2>
                     <ul className='list-disc list-inside text-gray-300 space-y-1'>
                         <li>IT Sector</li>
                         <li>Business Reports</li>
@@ -25,7 +25,7 @@ export default function page() {
                     </ul>
                 </section>
                 <section className='mb-10'>
-                    <h2 className='text-2xl font-semibold text-white mb-2'>
+                    <h2 className="text-2xl font-semibold text-white mb-2">
                         Let's Connect
                     </h2>
                     <p className='text-gray-300'>If you enjoy reading make sure to reach out and suggest topic about what could more i can done.</p>

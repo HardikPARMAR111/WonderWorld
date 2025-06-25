@@ -1,10 +1,10 @@
 'use client'
-import React from 'react'
+import React from 'react';
 import { useState } from 'react'
 import Sidebar from '../components/Sidebar';
 import Editor from '../components/Editor';
 
-export default function page() {
+export default function Page() {
   const [title, settitle] = useState('');
   const [content, setcontent] = useState('');
   const [tags, settags] = useState('');
