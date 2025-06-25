@@ -56,7 +56,7 @@ export default function EditBlogPosts(){
                             const imgurl = extractFirstImg(blog.content);
                             return(
                             <div key={blog._id} className="flex p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition shadow relative ">
-                                {imgurl ? <Image src={imgurl} className="w-1/3 h-36 p-4"/>:null}
+                                {imgurl ? <Image src={imgurl} className="w-1/3 h-36 p-4" alt="no image " height="70" width="100"/>:null}
                                 <Link href={`/admin/edit/${blog.slug}`} className="absolute top-2 right-2 text-blue-600 hover:text-blue-400">
                                     <Pencil size={20}/>  
                                 </Link>
